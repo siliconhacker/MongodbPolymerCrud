@@ -44,9 +44,11 @@ These are the basic attributes I need to get an ajax request to succeed or the w
 
 >String default: ''
 The URL target of the request.
+>*url - where we get data from*
 
 >> **auto**
 Boolean default: false
+>*auto - fires events*
 
 >If true, automatically performs an Ajax request when either url or params changes.
 
@@ -61,7 +63,7 @@ Boolean default: false
 ------
 * handleAs
 
->String default: json
+>String default: json string of data
 
 >Specifies what data to store in the response property, and to deliver as event.detail.response in response events.
 
@@ -82,6 +84,12 @@ Boolean default: false
 ------
 * Body or Params
 
+>*use data bindings to declare data provider (behind the scenes)*
+
+>params attribute - jason encoded object at value to params
+
+>body attribue - jason encoded object at value to params
+
 >**Body** content to send with the request, typically used with "POST" requests.
 
 >If body is a string it will be sent unmodified.
@@ -97,8 +105,25 @@ Boolean default: false
 
 >Default is 'GET'.
 
+
 ----------
 * on-response
+
+>*go to url and brings it back to last-response to our data bindings*
+
+>*scope variable handles events - the data that come back*
+
+>*then i can handle that data in sync with the dom nodes data bindings*
+
+>*that data goes to dom repeater*
+
+>*then loops over the data returned to my defines tags*
+
+>*generate dom based on the url call returned*
+
+>*all the iron ajax updates the dom - no js*
+
+>dom-bind wraps data elements and listens for the change events
 
 >iron-ajax will notify return data through *on-response* attribute that is readOnly  
 
@@ -184,6 +209,7 @@ Boolean default: false
 
 [Google Polymer 1.0](https://www.polymer-project.org/1.0/)
 
+>iron elements documentation - and give you all the methods and events it fires
 [iron-ajax 1.0.4](https://elements.polymer-project.org/elements/iron-ajax)
 
 [iron-ajax… wat?! -- Polycasts #26](https://www.youtube.com/watch?t=3&v=k1eR_3KqJms)
