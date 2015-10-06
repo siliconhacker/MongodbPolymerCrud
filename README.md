@@ -17,7 +17,7 @@ Google states that iron-ajax makes it easy to make ajax calls and parse the resp
 
 The iron-ajax element exposes *XMLHttpRequest* network request functionality.
 
-**Include import for the iron-ajax web component to your custom element **
+**Include import for the iron-ajax web component to your custom element**
 
 ```
   <link rel="import" href="../iron-ajax.html">
