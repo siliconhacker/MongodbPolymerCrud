@@ -209,7 +209,8 @@ Boolean default: false
 
 [Google Polymer 1.0](https://www.polymer-project.org/1.0/)
 
->iron elements documentation - and give you all the methods and events it fires
+iron elements documentation - and give you all the methods and events it fires
+
 [iron-ajax 1.0.4](https://elements.polymer-project.org/elements/iron-ajax)
 
 [iron-ajax… wat?! -- Polycasts #26](https://www.youtube.com/watch?t=3&v=k1eR_3KqJms)
